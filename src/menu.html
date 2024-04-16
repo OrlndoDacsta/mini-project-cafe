@@ -17,19 +17,47 @@
       class="w-full bg-cover"
     >
       <div class="container mx-auto">
-        <nav class="flex items-center justify-between p-5">
+        <nav
+          class="flex items-center justify-center p-5 sm:justify-between md:justify-between"
+        >
           <a class="transition delay-500 hover:scale-125" href="home.html">
             <div class="flex gap-2">
-              <img src="../public/asset/icon/logo_coffe.svg" alt="logo_coffe" />
-              <img src="../public/asset/img/logo_font.png" alt="" />
+              <img
+                class="hidden sm:flex md:flex"
+                src="../public/asset/icon/logo_coffe.svg"
+                alt="logo_coffe"
+              />
+              <img
+                class="hidden sm:flex md:flex"
+                src="../public/asset/img/logo_font.png"
+                alt=""
+              />
             </div>
           </a>
-          
-          <div class="flex gap-10 text-3xl">
-            <a class="transition delay-500 text-primary hover:scale-125 hover:text-secondary" href="about.html">About Us</a>
-            <a class="transition delay-500 text-secondary hover:scale-125 hover:text-primary" href="menu.html">Our Product</a>
-            <a class="transition delay-500 text-secondary hover:scale-125 hover:text-primary" href="booking.html">Booking</a>
-            <a class="transition delay-500 text-secondary hover:scale-125 hover:text-primary" href="#contact">Contact</a>
+
+          <div
+            class="flex gap-6 text-lg sm:text-3xl md:text-3xl sm:gap-10 md:gap-10"
+          >
+            <a
+              class="transition delay-500 text-primary hover:scale-125 hover:text-secondary"
+              href="about.html"
+              >About Us</a
+            >
+            <a
+              class="transition delay-500 text-secondary hover:scale-125 hover:text-primary"
+              href="menu.html"
+              >Our Product</a
+            >
+            <a
+              class="transition delay-500 text-secondary hover:scale-125 hover:text-primary"
+              href="booking.html"
+              >Booking</a
+            >
+            <a
+              class="transition delay-500 text-secondary hover:scale-125 hover:text-primary"
+              href="#contact"
+              >Contact</a
+            >
           </div>
 
           <div class="">
@@ -38,26 +66,38 @@
               name="search"
               placeholder="Search Menu"
               autocomplete="off"
-              class="relative px-6 py-2 rounded-3xl"
+              class="relative hidden px-6 py-2 rounded-3xl sm:flex md:flex"
             />
           </div>
         </nav>
       </div>
 
       <div class="container mx-auto mt-10">
-        <h1 class="text-4xl font-bold text-center text-secondary">
+        <h1
+          class="text-2xl font-bold text-center text-secondary sm:text-4xl md:text-4xl"
+        >
           Special Menu For You
         </h1>
         <div class="flex justify-center gap-20 mt-5">
-          <a class="transition delay-500 hover:translate-x-6" href="#drink"><img src="../public/asset/img/drink.png" alt="drink" /></a>
-          <a class="transition delay-500 hover:translate-x-6" href="#food"><img src="../public/asset/img/food.png" alt="food" /></a>
+          <a class="transition delay-500 hover:translate-x-6" href="#drink"
+            ><img src="../public/asset/img/drink.png" alt="drink"
+          /></a>
+          <a class="transition delay-500 hover:translate-x-6" href="#food"
+            ><img src="../public/asset/img/food.png" alt="food"
+          /></a>
         </div>
       </div>
 
       <main class="container mx-auto mt-20" id="drink">
-        <span class="text-3xl font-bold text-secondary">Drinks</span>
+        <p
+          class="text-xl font-bold text-center text-secondary sm:text-left md:text-left sm:text-3xl md:text-3xl"
+        >
+          Drinks
+        </p>
 
-        <div class="grid grid-cols-3 gap-10 px-10 mt-5">
+        <div
+          class="grid grid-cols-1 gap-10 px-10 mt-5 sm:grid-cols-3 md:grid-cols-3"
+        >
           <div
             class="px-5 py-5 bg-white border-4 border-solid rounded-2xl mb w-fit border-slate-100"
           >
@@ -67,8 +107,14 @@
               alt="espreso"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Espresso</span>
-              <span class="text-2xl font-bold text-secondary">15 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Espresso</span
+              >
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >15 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -85,8 +131,14 @@
               alt="hot-milk"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Hot Milk</span>
-              <span class="text-2xl font-bold text-secondary">12 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Hot Milk</span
+              >
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >12 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -103,10 +155,14 @@
               alt="coffee-ice"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary"
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
                 >Coffe Ice Cream</span
               >
-              <span class="text-2xl font-bold text-secondary">20 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >20 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -123,8 +179,14 @@
               alt="Cappuccino"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Cappuccino</span>
-              <span class="text-2xl font-bold text-secondary">12 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Cappuccino</span
+              >
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >12 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -141,8 +203,14 @@
               alt="Moccacino"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Moccacino</span>
-              <span class="text-2xl font-bold text-secondary">18 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Moccacino</span
+              >
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >18 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -159,10 +227,14 @@
               alt="Hazelnut"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary"
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
                 >Hazelnut Latte</span
               >
-              <span class="text-2xl font-bold text-secondary">23 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >23 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -173,9 +245,15 @@
       </main>
 
       <main class="container mx-auto mt-52" id="food">
-        <span class="text-3xl font-bold text-secondary">Foods</span>
+        <p
+          class="text-lg font-bold text-center text-secondary sm:text-left md:text-left sm:text-3xl md:text-3xl"
+        >
+          Foods
+        </p>
 
-        <div class="grid grid-cols-3 gap-10 px-10 mt-5">
+        <div
+          class="grid grid-cols-1 gap-10 px-10 mt-5 sm:grid-cols-3 md:grid-cols-3"
+        >
           <div
             class="px-5 py-5 bg-white border-4 border-solid rounded-2xl mb w-fit border-slate-100"
           >
@@ -185,8 +263,14 @@
               alt="sandwich"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Sandwich</span>
-              <span class="text-2xl font-bold text-secondary">15 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Sandwich</span
+              >
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >15 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -203,8 +287,14 @@
               alt="mie-goreng"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Mie Goreng</span>
-              <span class="text-2xl font-bold text-secondary">15 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Mie Goreng</span
+              >
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >15 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -221,8 +311,14 @@
               alt="nasi-goreng"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Nasi Goreng</span>
-              <span class="text-2xl font-bold text-secondary">20 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Nasi Goreng</span
+              >
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >20 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -239,8 +335,14 @@
               alt="dimsum"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Dimsum</span>
-              <span class="text-2xl font-bold text-secondary">12 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Dimsum</span
+              >
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >12 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -257,8 +359,14 @@
               alt="seblak"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Seblak</span>
-              <span class="text-2xl font-bold text-secondary">18 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Seblak</span
+              >
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >18 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -275,10 +383,14 @@
               alt="waflet"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary"
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
                 >Waffle Ice Cream</span
               >
-              <span class="text-2xl font-bold text-secondary">12 K</span>
+              <span
+                class="text-xl font-bold text-secondary sm:text-2xl md:text-2xl"
+                >12 K</span
+              >
             </div>
 
             <span class="px-4 py-4 text-sm font-bold text-slate-500"
@@ -289,10 +401,18 @@
       </main>
 
       <footer class="w-full mt-10 bg-secondary font-Poppins" id="contact">
-        <div class="container flex justify-between py-10 mx-auto">
+        <div
+          class="container grid grid-cols-1 gap-10 py-10 mx-auto sm:grid-cols-3 md:grid-cols-3"
+        >
           <div>
-            <p class="text-3xl font-bold text-white">Follow Us</p>
-            <div class="flex gap-5 mt-5">
+            <p
+              class="text-2xl font-bold text-center text-white sm:text-3xl md:text-3xl sm:text-left md:text-left"
+            >
+              Follow Us
+            </p>
+            <div
+              class="flex justify-center gap-5 mt-5 sm:justify-start md:justify-start"
+            >
               <img src="../public/asset/img/fb.png" alt="fb" />
               <img src="../public/asset/img/x.png" alt="x" />
               <img src="../public/asset/img/wa.png" alt="wa" />
@@ -302,28 +422,50 @@
           </div>
 
           <div>
-            <p class="text-3xl font-bold text-white">Opening Hours</p>
-            <p class="mt-5 text-xl font-bold text-white">Every Day</p>
-            <p class="mt-2 text-xl font-bold text-white">03PM - 10PM</p>
+            <p
+              class="text-2xl font-bold text-center text-white sm:text-3xl md:text-3xl sm:text-left md:text-left"
+            >
+              Opening Hours
+            </p>
+            <p
+              class="mt-5 text-xl font-bold text-center text-white sm:text-left md:text-left"
+            >
+              Every Day
+            </p>
+            <p
+              class="mt-2 text-xl font-bold text-center text-white sm:text-left md:text-left"
+            >
+              03PM - 10PM
+            </p>
           </div>
 
           <div>
-            <p class="text-3xl font-bold text-white">Contact</p>
-            <div class="flex gap-2 mt-5">
+            <p
+              class="text-2xl font-bold text-center text-white sm:text-3xl md:text-3xl sm:text-left md:text-left"
+            >
+              Contact
+            </p>
+            <div
+              class="flex justify-center gap-2 mt-5 sm:justify-start md:justify-start"
+            >
               <img src="../public/asset/img/location.png" alt="" />
               <p class="mt-2 text-xl font-bold text-white">
                 Palembang, Sumatera Selatan
               </p>
             </div>
 
-            <div class="flex gap-2 mt-5">
+            <div
+              class="flex justify-center gap-2 mt-5 sm:justify-start md:justify-start"
+            >
               <img src="../public/asset/img/mail.png" alt="" />
               <p class="mt-2 text-xl font-bold text-white">
                 selowcafe@gmail.com
               </p>
             </div>
 
-            <div class="flex gap-2 mt-5">
+            <div
+              class="flex justify-center gap-2 mt-5 sm:justify-start md:justify-start"
+            >
               <img src="../public/asset/img/telp.png" alt="" />
               <p class="mt-2 text-xl font-bold text-white">
                 +62 1234 5678 9012
@@ -332,7 +474,7 @@
           </div>
         </div>
         <div class="container mx-auto mt-16 text-center">
-          <p class="text-xl font-bold text-white">
+          <p class="text-sm font-bold text-white sm:text-xl md:text-xl">
             Copyright 2024 &copy; selowcafe.com
           </p>
         </div>
