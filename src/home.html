@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/output.css" />
+    <link
+      rel="shortcut icon"
+      href="../public/asset/icon/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Home</title>
   </head>
   <body class="font-Poppins">
@@ -14,16 +19,34 @@
       <!-- navbar -->
       <div class="container mx-auto">
         <nav class="flex items-center justify-between p-5">
-          <div class="flex gap-2">
-            <img src="../public/asset/icon/logo_coffe.svg" alt="logo_coffe" />
-            <img src="../public/asset/img/logo_font.png" alt="" />
-          </div>
+          <a class="transition delay-500 hover:scale-125" href="home.html">
+            <div class="flex gap-2">
+              <img src="../public/asset/icon/logo_coffe.svg" alt="logo_coffe" />
+              <img src="../public/asset/img/logo_font.png" alt="" />
+            </div>
+          </a>
 
           <div class="flex gap-10 text-3xl">
-            <a class="text-primary" href="#">About Us</a>
-            <a href="#">Our Product</a>
-            <a href="#">Booking</a>
-            <a href="#">Contact</a>
+            <a
+              class="transition delay-500 text-primary hover:scale-125 hover:text-secondary"
+              href="about.html"
+              >About Us</a
+            >
+            <a
+              class="transition delay-500 text-secondary hover:scale-125 hover:text-primary"
+              href="menu.html"
+              >Our Product</a
+            >
+            <a
+              class="transition delay-500 text-secondary hover:scale-125 hover:text-primary"
+              href="booking.html"
+              >Booking</a
+            >
+            <a
+              class="transition delay-500 text-secondary hover:scale-125 hover:text-primary"
+              href="#contact"
+              >Contact</a
+            >
           </div>
 
           <div class="">
@@ -48,14 +71,21 @@
             Tingkatkan produktivitas dan bangun moodmu <br />
             dengan segelas kopi di pagi hari
           </p>
-          <button
-            class="px-10 py-4 mt-5 mr-8 text-white rounded-full bg-secondary"
+          <a href="booking.html"
+            ><button
+              class="px-10 py-4 mt-5 mr-8 text-white transition delay-500 rounded-full bg-secondary hover:text-primary"
+            >
+              Order Now
+            </button></a
           >
-            Order Now
-          </button>
-          <button class="px-10 py-4 ml-8 rounded-full text-primary">
-            More Menu
-          </button>
+
+          <a href="menu.html">
+            <button
+              class="px-10 py-4 ml-8 transition delay-500 rounded-full text-primary hover:text-secondary"
+            >
+              More Menu
+            </button>
+          </a>
         </div>
 
         <div class="rounded-full h-80 bg-secondary w-80">
@@ -94,7 +124,7 @@
             class="px-5 py-5 bg-white border-4 border-solid mb w-fit border-slate-100 rounded-4xl"
           >
             <img
-              class="rounded-4xl"
+              class="transition delay-500 cursor-pointer hover:origin-center rounded-4xl hover:rotate-12"
               src="../public/asset/img/cappucino1.png"
               alt="cappucino1"
             />
@@ -112,7 +142,7 @@
             class="px-5 py-5 bg-white border-4 border-solid w-fit border-slate-100 rounded-4xl"
           >
             <img
-              class="rounded-4xl"
+              class="transition delay-500 cursor-pointer rounded-4xl hover:origin-center hover:rotate-12"
               src="../public/asset/img/mie-goreng-home.png"
               alt="cappucino1"
             />
@@ -130,7 +160,7 @@
             class="px-5 py-5 bg-white border-4 border-solid w-fit border-slate-100 rounded-4xl"
           >
             <img
-              class="rounded-4xl"
+              class="transition delay-500 cursor-pointer rounded-4xl hover:origin-center hover:rotate-12"
               src="../public/asset/img/hazelnut-home.png"
               alt="cappucino1"
             />
@@ -155,7 +185,7 @@
     >
       <div class="flex items-center justify-center gap-28">
         <img
-          class="border-4 border-solid rounded-4xl border-slate-900"
+          class="transition delay-500 border-4 border-solid cursor-pointer rounded-4xl border-slate-900 hover:origin-bottom hover:-rotate-12"
           src="../public/asset/img/free-wifi.png"
           alt=""
         />
@@ -171,7 +201,7 @@
     </section>
   </body>
 
-  <footer class="w-full bg-secondary font-Poppins">
+  <footer class="w-full bg-secondary font-Poppins" id="contact">
     <div class="container flex justify-between py-10 mx-auto">
       <div>
         <p class="text-3xl font-bold text-white">Follow Us</p>
@@ -211,7 +241,9 @@
       </div>
     </div>
     <div class="container mx-auto mt-16 text-center">
-        <p class="text-xl font-bold text-white">Copyright 2024 &copy; selowcafe.com</p>
-      </div>
+      <p class="text-xl font-bold text-white">
+        Copyright 2024 &copy; selowcafe.com
+      </p>
+    </div>
   </footer>
 </html>
