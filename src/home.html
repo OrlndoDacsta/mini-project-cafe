@@ -14,19 +14,31 @@
   <body class="font-Poppins">
     <section
       style="background-image: url(../public/asset/icon/bg_img_hero.svg)"
-      class="w-full bg-orange-100 bg-right-top bg-no-repeat h-101"
+      class="w-full bg-orange-100 bg-right-bottom bg-no-repeat h-101 sm:bg-right-top md:bg-right-top"
     >
       <!-- navbar -->
       <div class="container mx-auto">
-        <nav class="flex items-center justify-between p-5">
+        <nav
+          class="flex items-center justify-center p-5 sm:justify-between md:justify-between"
+        >
           <a class="transition delay-500 hover:scale-125" href="home.html">
             <div class="flex gap-2">
-              <img src="../public/asset/icon/logo_coffe.svg" alt="logo_coffe" />
-              <img src="../public/asset/img/logo_font.png" alt="" />
+              <img
+                class="hidden sm:flex md:flex"
+                src="../public/asset/icon/logo_coffe.svg"
+                alt="logo_coffe"
+              />
+              <img
+                class="hidden sm:flex md:flex"
+                src="../public/asset/img/logo_font.png"
+                alt=""
+              />
             </div>
           </a>
 
-          <div class="flex gap-10 text-3xl">
+          <div
+            class="flex gap-6 text-lg sm:text-3xl md:text-3xl sm:gap-10 md:gap-10"
+          >
             <a
               class="transition delay-500 text-primary hover:scale-125 hover:text-secondary"
               href="about.html"
@@ -55,25 +67,34 @@
               name="search"
               placeholder="Search Menu"
               autocomplete="off"
-              class="relative px-6 py-2 rounded-3xl"
+              class="relative hidden px-6 py-2 rounded-3xl sm:flex md:flex"
             />
           </div>
         </nav>
       </div>
 
-      <div class="container flex mx-auto mt-20 gap-72">
-        <div class="w-1/2">
-          <h1 class="text-6xl font-bold text-secondary">
-            Nikmati <span class="text-primary">kopimu</span><br />
+      <div
+        class="container grid grid-cols-1 gap-10 mx-auto mt-14 sm:grid-cols-2 md:grid-cols-2 sm:gap-72 md:gap-72 sm:mt-20 md:mt-20"
+      >
+        <div class="ml-20">
+          <h1
+            class="text-2xl font-bold text-primary sm:text-6xl md:text-6xl sm:text-secondary md:text-secondary"
+          >
+            Nikmati
+            <span class="text-secondary sm:text-primary md:text-primary"
+              >kopimu</span
+            ><br />
             sebelum beraktifitas
           </h1>
-          <p class="mt-5 text-xl font-semibold text-slate-500">
+          <p
+            class="mt-3 text-base font-semibold text-slate-500 sm:text-xl md:text-xl sm:mt-5 md:mt-5"
+          >
             Tingkatkan produktivitas dan bangun moodmu <br />
             dengan segelas kopi di pagi hari
           </p>
           <a href="booking.html"
             ><button
-              class="px-10 py-4 mt-5 mr-8 text-white transition delay-500 rounded-full bg-secondary hover:text-primary"
+              class="px-5 py-2 mt-5 mr-8 text-white transition delay-500 rounded-full bg-secondary hover:text-primary sm:px-10 md:px-10 sm:py-4 md:py-4"
             >
               Order Now
             </button></a
@@ -81,97 +102,122 @@
 
           <a href="menu.html">
             <button
-              class="px-10 py-4 ml-8 transition delay-500 rounded-full text-primary hover:text-secondary"
+              class="px-5 py-2 ml-8 transition delay-500 rounded-full text-primary hover:text-secondary sm:px-10 md:px-10 sm:py-4 md:py-4"
             >
               More Menu
             </button>
           </a>
         </div>
 
-        <div class="rounded-full h-80 bg-secondary w-80">
+        <div
+          class="mx-auto rounded-full w-44 h-44 bg-secondary sm:mx-0 md:mx-0 sm:h-80 md:h-80 sm:w-80 md:w-80"
+        >
           <span
-            class="absolute px-10 py-2 mt-3 text-2xl font-bold bg-white border-4 border-solid rounded-full text-secondary border-slate-100"
+            class="absolute px-4 text-base font-bold bg-white border-4 border-solid rounded-full text-secondary border-slate-100 sm:text-2xl md:text-2xl sm:mt-3 md:mt-3 sm:px-10 md:px-10 sm:py-2 md:py-2"
             >Cappuccino</span
           >
 
           <span
-            class="absolute inline-block px-6 py-2 mt-16 ml-64 text-2xl font-bold bg-white border-4 border-solid rounded-full text-secondary border-slate-100"
+            class="absolute inline-block px-4 text-base font-bold bg-white border-4 border-solid rounded-full ml-36 mt-7 text-secondary border-slate-100 sm:text-2xl md:text-2xl sm:px-10 md:px-10 sm:py-2 md:py-2 sm:ml-64 md:ml-64 sm:mt-0 md:mt-0"
             >4.8
             <img class="inline-block" src="../public/asset/img/star.png" alt=""
           /></span>
 
           <img
-            class="mx-auto mt-2"
+            class="w-3/4 mx-auto mt-2 sm:w-fit md:w-fit"
             src="../public/asset/img/cappucino.png"
             alt="cappucino"
           />
 
           <span
-            class="absolute px-10 py-2 text-2xl font-bold bg-white border-4 border-solid rounded-full text-secondary border-slate-100"
+            class="absolute px-4 text-base font-bold bg-white border-4 border-solid rounded-full text-secondary border-slate-100 sm:text-2xl md:text-2xl sm:px-10 md:px-10 sm:py-2 md:py-2"
             >12K</span
           >
         </div>
       </div>
 
-      <main class="container mx-auto mt-14">
-        <span class="text-3xl font-bold">Popular Now</span>
+      <main class="container mx-auto mt-7 sm:mt-14 md:mt-14">
+        <p
+          class="text-xl font-bold text-center text-secondary sm:text-3xl md:text-3xl sm:text-left md:text-left"
+        >
+          Popular Now
+        </p>
 
         <div
-          class="flex justify-center w-full gap-10 py-10 mt-14 rounded-4xl bg-tertery"
+          class="grid w-full grid-cols-1 gap-5 py-12 mt-5 rounded-4xl bg-tertery sm:grid-cols-3 md:grid-cols-3 sm:mt-14 md:mt-14"
         >
           <!-- card -->
           <div
-            class="px-5 py-5 bg-white border-4 border-solid mb w-fit border-slate-100 rounded-4xl"
+            class="px-5 py-5 mx-auto bg-white border-4 border-solid w-60 border-slate-100 rounded-4xl sm:w-80 md:w-80"
           >
             <img
-              class="transition delay-500 cursor-pointer hover:origin-center rounded-4xl hover:rotate-12"
+              class="w-3/4 mx-auto transition delay-500 cursor-pointer hover:origin-center rounded-3xl hover:rotate-12 sm:w-full md:w-full sm:rounded-4xl md:rounded-4xl"
               src="../public/asset/img/cappucino1.png"
               alt="cappucino1"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Cappuccino</span>
-              <span class="text-2xl font-bold text-secondary">12 K</span>
+              <span
+                class="text-base font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Cappuccino</span
+              >
+              <span
+                class="text-base font-bold text-secondary sm:text-2xl md:text-2xl"
+                >12 K</span
+              >
             </div>
 
-            <span class="px-4 py-4 text-sm font-bold text-slate-500"
+            <span
+              class="px-4 py-4 text-xs font-bold text-slate-500 sm:text-sm md:text-sm"
               >Hot Cappuccino</span
             >
           </div>
 
           <div
-            class="px-5 py-5 bg-white border-4 border-solid w-fit border-slate-100 rounded-4xl"
+            class="px-5 py-5 mx-auto bg-white border-4 border-solid w-60 border-slate-100 rounded-4xl sm:w-80 md:w-80"
           >
             <img
-              class="transition delay-500 cursor-pointer rounded-4xl hover:origin-center hover:rotate-12"
+              class="w-3/4 mx-auto transition delay-500 cursor-pointer hover:origin-center rounded-3xl hover:rotate-12 sm:w-full md:w-full sm:rounded-4xl md:rounded-4xl"
               src="../public/asset/img/mie-goreng-home.png"
               alt="cappucino1"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary">Mie Goreng</span>
-              <span class="text-2xl font-bold text-secondary">15 K</span>
+              <span
+                class="text-base font-bold text-secondary sm:text-2xl md:text-2xl"
+                >Mie Goreng</span
+              >
+              <span
+                class="text-base font-bold text-secondary sm:text-2xl md:text-2xl"
+                >15 K</span
+              >
             </div>
 
-            <span class="px-4 py-4 text-sm font-bold text-slate-500"
+            <span
+              class="px-4 py-4 text-xs font-bold text-slate-500 sm:text-sm md:text-sm"
               >Special</span
             >
           </div>
 
           <div
-            class="px-5 py-5 bg-white border-4 border-solid w-fit border-slate-100 rounded-4xl"
+            class="px-5 py-5 mx-auto bg-white border-4 border-solid w-60 border-slate-100 rounded-4xl sm:w-80 md:w-80"
           >
             <img
-              class="transition delay-500 cursor-pointer rounded-4xl hover:origin-center hover:rotate-12"
+              class="w-3/4 mx-auto transition delay-500 cursor-pointer hover:origin-center rounded-3xl hover:rotate-12 sm:w-full md:w-full sm:rounded-4xl md:rounded-4xl"
               src="../public/asset/img/hazelnut-home.png"
               alt="cappucino1"
             />
             <div class="flex justify-between px-4 py-4">
-              <span class="text-2xl font-bold text-secondary"
+              <span
+                class="text-base font-bold text-secondary sm:text-2xl md:text-2xl"
                 >Hazelnut Latte</span
               >
-              <span class="text-2xl font-bold text-secondary">23 K</span>
+              <span
+                class="text-base font-bold text-secondary sm:text-2xl md:text-2xl"
+                >23 K</span
+              >
             </div>
 
-            <span class="px-4 py-4 text-sm font-bold text-slate-500"
+            <span
+              class="px-4 py-4 text-xs font-bold text-slate-500 sm:text-sm md:text-sm"
               >Hot Hazelnut Latte</span
             >
           </div>
@@ -181,17 +227,23 @@
 
     <section
       style="background-image: url(../public/asset/img/bg-image.png)"
-      class="w-full mt-[450px] h-fit py-10"
+      class="w-full mt-[810px] h-fit py-10 sm:mt-[450px] md:mt-[450px]:"
     >
-      <div class="flex items-center justify-center gap-28">
+      <div
+        class="grid items-center justify-center grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2"
+      >
         <img
-          class="transition delay-500 border-4 border-solid cursor-pointer rounded-4xl border-slate-900 hover:origin-bottom hover:-rotate-12"
+          class="w-3/4 mx-auto transition delay-500 border-4 border-solid cursor-pointer rounded-4xl border-slate-900 hover:origin-bottom hover:-rotate-12 sm:w-fit md:w-fit"
           src="../public/asset/img/free-wifi.png"
           alt=""
         />
-        <div>
-          <p class="text-5xl font-bold text-secondary">Free Wifi</p>
-          <p class="mt-5 text-2xl font-semibold text-slate-500">
+        <div class="mx-auto">
+          <p class="text-xl font-bold text-secondary sm:text-5xl md:text-5xl">
+            Free Wifi
+          </p>
+          <p
+            class="mt-5 text-base font-semibold text-slate-500 sm:text-2xl md:text-2xl"
+          >
             Cari Cafe yang Nyaman untuk Nongkrong <br />
             dengan WIFI Kencang? Coba Sekarang di <br />
             Cafe Selow.
@@ -202,10 +254,18 @@
   </body>
 
   <footer class="w-full bg-secondary font-Poppins" id="contact">
-    <div class="container flex justify-between py-10 mx-auto">
+    <div
+      class="container grid grid-cols-1 gap-10 py-10 mx-auto sm:grid-cols-3 md:grid-cols-3"
+    >
       <div>
-        <p class="text-3xl font-bold text-white">Follow Us</p>
-        <div class="flex gap-5 mt-5">
+        <p
+          class="text-2xl font-bold text-center text-white sm:text-3xl md:text-3xl sm:text-left md:text-left"
+        >
+          Follow Us
+        </p>
+        <div
+          class="flex justify-center gap-5 mt-5 sm:justify-start md:justify-start"
+        >
           <img src="../public/asset/img/fb.png" alt="fb" />
           <img src="../public/asset/img/x.png" alt="x" />
           <img src="../public/asset/img/wa.png" alt="wa" />
@@ -215,33 +275,55 @@
       </div>
 
       <div>
-        <p class="text-3xl font-bold text-white">Opening Hours</p>
-        <p class="mt-5 text-xl font-bold text-white">Every Day</p>
-        <p class="mt-2 text-xl font-bold text-white">03PM - 10PM</p>
+        <p
+          class="text-2xl font-bold text-center text-white sm:text-3xl md:text-3xl sm:text-left md:text-left"
+        >
+          Opening Hours
+        </p>
+        <p
+          class="mt-5 text-xl font-bold text-center text-white sm:text-left md:text-left"
+        >
+          Every Day
+        </p>
+        <p
+          class="mt-2 text-xl font-bold text-center text-white sm:text-left md:text-left"
+        >
+          03PM - 10PM
+        </p>
       </div>
 
       <div>
-        <p class="text-3xl font-bold text-white">Contact</p>
-        <div class="flex gap-2 mt-5">
+        <p
+          class="text-2xl font-bold text-center text-white sm:text-3xl md:text-3xl sm:text-left md:text-left"
+        >
+          Contact
+        </p>
+        <div
+          class="flex justify-center gap-2 mt-5 sm:justify-start md:justify-start"
+        >
           <img src="../public/asset/img/location.png" alt="" />
           <p class="mt-2 text-xl font-bold text-white">
             Palembang, Sumatera Selatan
           </p>
         </div>
 
-        <div class="flex gap-2 mt-5">
+        <div
+          class="flex justify-center gap-2 mt-5 sm:justify-start md:justify-start"
+        >
           <img src="../public/asset/img/mail.png" alt="" />
           <p class="mt-2 text-xl font-bold text-white">selowcafe@gmail.com</p>
         </div>
 
-        <div class="flex gap-2 mt-5">
+        <div
+          class="flex justify-center gap-2 mt-5 sm:justify-start md:justify-start"
+        >
           <img src="../public/asset/img/telp.png" alt="" />
           <p class="mt-2 text-xl font-bold text-white">+62 1234 5678 9012</p>
         </div>
       </div>
     </div>
     <div class="container mx-auto mt-16 text-center">
-      <p class="text-xl font-bold text-white">
+      <p class="text-sm font-bold text-white sm:text-xl md:text-xl">
         Copyright 2024 &copy; selowcafe.com
       </p>
     </div>
